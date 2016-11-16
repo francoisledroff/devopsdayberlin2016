@@ -58,6 +58,3 @@ Imagine that a co-worker manually changes `/tmp/motd` by replacing 'hello chef' 
 
 In practice, you'll have chef-client installed as a service running periodically or as part of a continuous delivery system
 
-
-This computer has <%= node['cpu']['total'] %> CPUs!
-

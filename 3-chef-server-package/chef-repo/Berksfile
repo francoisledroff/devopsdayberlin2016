@@ -1,0 +1,15 @@
+source "https://supermarket.getchef.com"
+
+cookbook 'ntp', '~> 1.5.4'
+cookbook 'chef-client', '~> 3.2.0'
+cookbook 'mongodb', '= 0.16.0'
+cookbook 'java', '~> 1.28.0'
+cookbook 'ulimit', '= 0.3.0'
+cookbook 'logrotate', '~> 1.9.2'
+cookbook 'cpu', '>= 0.2.0'
+cookbook 'build-essential'
+cookbook 'hostsfile', '>=2.4.5'
+cookbook 'mysql', '~> 8.0'
+cookbook 'yum-mysql-community', '~> 0.2.0'
+cookbook 'selinux', '~> 0.9.0'
+

@@ -1,3 +1,9 @@
 Hello from <%= @greeter %>
-Note that this computer has <%= node['cpu']['total'] %> CPUs!
-Use them wisely !
+
+<% if node['cpu']['total'] == 1 -%>
+    This computer has <%= node['cpu']['total'] %> CPU!
+<% else -%>
+    This computer has <%= node['cpu']['total'] %> CPUs!
+<% end -%>
+
+The primary IP address of this computer is: <%= node['ipaddress'] %>
