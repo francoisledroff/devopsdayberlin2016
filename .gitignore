@@ -7,3 +7,10 @@ devopsdayberlin2016.iml
 4-nginx-reverse-proxy-fat-jar/chef-repo/nodes
 Berksfile.lock
 4-nginx-reverse-proxy-fat-jar/chef-repo/clients
+1-chef-client/.vagrant
+2-chef-cookbook-and-template/.vagrant
+3-chef-server-package/chef-repo/.chef/local-mode-cache
+3-chef-server-package/chef-repo/.chef/vms
+3-chef-server-package/chef-repo/berks-cookbooks
+3-chef-server-package/chef-repo/clients
+3-chef-server-package/chef-repo/nodes

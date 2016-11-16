@@ -36,8 +36,19 @@ Set up your working directory
 
         mkdir ~/chef-repo
         cd  ~/chef-repo
+        
+        cp -rf /vagrant/chef-repo/cookbooks ~/chef-repo/cookbooks
+        
+ ou à la main
+        
         touch motd.rb
         vi motd.rb
+        
+ edit with
+ 
+    file '/etc/motd' do
+        content 'hello from Francois'
+    end
 
 From your terminal window, run the following chef-client command to apply what you've written.
 

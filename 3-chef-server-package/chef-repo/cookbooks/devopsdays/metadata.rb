@@ -11,9 +11,6 @@ recipe 'devopsdays::default', 'Installs and configure a demo'
 
 supports 'centos'
 
-## local repo cookbooks
-depends 'chef-vault-util', '=1.0.2'
-
 ## community cookbooks declared with Berkshelf
 depends 'java'
 depends 'chef-client'
