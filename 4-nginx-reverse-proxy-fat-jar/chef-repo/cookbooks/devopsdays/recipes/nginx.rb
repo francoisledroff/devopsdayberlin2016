@@ -14,3 +14,9 @@ service 'nginx' do
   supports [:status, :start, :stop, :restart]
 end
 
+template '/usr/share/nginx/html/index.html' do
+  source 'index.html.erb'
+  variables(
+      :greeter => 'Francois'
+  )
+end

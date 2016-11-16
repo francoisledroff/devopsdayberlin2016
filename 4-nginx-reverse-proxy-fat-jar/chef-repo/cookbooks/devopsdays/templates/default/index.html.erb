@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to nginx!</title>
+  <style>
+    body {
+      width: 35em;
+      margin: 0 auto;
+      font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+<h1>Welcome to nginx powered by Chef</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+  configured with Chef. </p>
+
+<p>
+  If <%= @greeter %> did his job right,
+  further configuration should not be required.</p>
+
+<p>
+<% if node['cpu']['total'] == 1 -%>
+    This computer has <%= node['cpu']['total'] %> CPU!
+<% else -%>
+    This computer has <%= node['cpu']['total'] %> CPUs!
+<% end -%>
+</p>
+
+<p>
+The Api powered by Java/SpringBoot is reverse-proxied through <a href="/api/">api</a>
+</p>
+
+</p>
+</body>
+</html>

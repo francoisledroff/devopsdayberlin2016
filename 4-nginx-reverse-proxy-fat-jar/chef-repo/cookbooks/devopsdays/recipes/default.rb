@@ -22,4 +22,4 @@ include_recipe 'devopsdays::home'
 
 include_recipe 'devopsdays::nginx'
 
-include_recipe 'devopsdays::java'
+#include_recipe 'devopsdays::java'
