@@ -1,0 +1,9 @@
+4-nginx-reverse-proxy-fat-jar/artifactory-oss-4.14.1
+.idea
+devopsdayberlin2016.iml
+4-nginx-reverse-proxy-fat-jar/chef-repo/.chef/local-mode-cache
+4-nginx-reverse-proxy-fat-jar/chef-repo/.chef/vms
+4-nginx-reverse-proxy-fat-jar/chef-repo/berks-cookbooks
+4-nginx-reverse-proxy-fat-jar/chef-repo/nodes
+Berksfile.lock
+4-nginx-reverse-proxy-fat-jar/chef-repo/clients

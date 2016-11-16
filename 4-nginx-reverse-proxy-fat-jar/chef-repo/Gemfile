@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+gem 'chef-zero'
+
+gem 'chef-vault', '~> 2.3.0' 
+
+gem 'cheffish', '~> 0.9'
+gem 'chef-provisioning', '~> 0.16'
+gem 'chef-provisioning-vagrant', '~> 0.8.1'
+gem 'chef-provisioning-ssh', '~> 0.0.9'
+
+gem 'test-kitchen', '~> 1.13'
+
