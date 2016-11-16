@@ -3,7 +3,7 @@ resource_name :fat_jar
 property :artifactId, String, required: true
 property :groupIdPath, String,  default: 'com/ledroff'
 property :description, String, name_property: true
-property :version, String, default: '1.0.0'
+property :version, String, default: '[RELEASE]'
 property :javaOpts, String, default: '-Xms1024m -Xmx2048m -XX:MaxPermSize=256m'
 property :progArgs, String, default: '--spring.profiles.active=dev'
 
