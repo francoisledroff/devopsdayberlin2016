@@ -1,0 +1,14 @@
+[Unit]
+Description=<%= @serviceDescription %>
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=<%= @user %>
+ExecStart=/apps/java/bin/java <%= @javaOpts%> -Dfile.encoding=UTF-8 -jar <%= @jarPath %> <%= @progArgs%>
+ExecStop=/bin/kill -TERM $MAINPID
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
