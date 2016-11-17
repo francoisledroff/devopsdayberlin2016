@@ -9,7 +9,7 @@ machine 'devopsdays' do
   complete true
   # https://github.com/opscode/chef-metal/issues/95
   add_machine_options :vagrant_config => <<-EOM
-      config.vm.network "private_network", ip: "192.168.0.23"
+      config.vm.network "private_network", ip: "172.16.0.23"
       config.vm.provider 'virtualbox' do |v|
              v.customize [
                "modifyvm", :id,

@@ -12,4 +12,4 @@ default['devopsdays']['data']  = File.join(node['devopsdays']['home'], 'data')
 
 default['devopsdays']['artifactory_api_key_vault'] = 'corp_artifactory_api_key'
 
-default['devopsdays']['artifactory_base_url'] = 'http://192.168.0.1:9081/artifactory/ext-release-local'
+default['devopsdays']['artifactory_base_url'] = 'http://172.16.0.1:9081/artifactory/ext-release-local'

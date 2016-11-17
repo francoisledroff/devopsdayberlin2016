@@ -6,6 +6,6 @@
 template '/etc/motd' do
   source 'motd.erb'
   variables(
-      :greeter => 'francois'
+      :greeter => 'Francois'
   )
 end

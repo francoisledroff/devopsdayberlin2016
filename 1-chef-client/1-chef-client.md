@@ -37,7 +37,7 @@ Set up your working directory
         mkdir ~/chef-repo
         cd  ~/chef-repo
         
-        cp -rf /vagrant/chef-repo/cookbooks ~/chef-repo/cookbooks
+        cp -rf /vagrant/chef-repo/motd.rb ~/chef-repo/motd.rb
         
  ou à la main
         
