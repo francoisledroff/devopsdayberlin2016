@@ -1,6 +1,6 @@
 #  DevopsDays Berlin 2016 `Chef versus Ansible`
 
-This is the github `repo` used for an HandsOn session at DevopsDays Berlin 2016, named `Chef versus Ansible`
+This is the github `repo` used for an Hands-On session at DevopsDays Berlin 2016, named [`Chef versus Ansible`](http://www.slideshare.net/francoisledroff/devops-days-berlin2016)
 
 This `repo` was done to demo the `Chef` part. Its introduces the following Chef concepts:
 
