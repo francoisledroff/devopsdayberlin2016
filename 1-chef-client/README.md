@@ -1,5 +1,18 @@
+#  Chef 101
 
-# Install VirtualBox
+Here we showcase/introduce the following Chef elements:
+* Chef `nodes`
+* `chef-client`
+* Chef `resource`
+* Chef `recipes`
+
+And to test-drive it, we use/showcase
+* VirtualBox
+* Vagrant
+
+#  Chef 101 Test drive
+
+## Install VirtualBox
 
     VBoxManage --version
 
@@ -8,7 +21,7 @@
 
 Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers from Oracle Corporation. Developed initially by Innotek GmbH, it was acquired by Sun Microsystems in 2008 which was in turn acquired by Oracle in 2010.
 
-# Install Vagrant
+## Install Vagrant
 
     vagrant --version
 
@@ -17,7 +30,7 @@ Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers from
 Vagrant is an open-source software product for building and maintaining portable virtual development environments. 
 
 
-# my VagrantFile
+## my VagrantFile
 
 Running a simple basic `CentOS-6.4-x86_64` image
 
@@ -26,11 +39,11 @@ Running a simple basic `CentOS-6.4-x86_64` image
     vagrant up
     vagrant ssh
 
-# Install Chef-dk on the vm
+## Install Chef-dk on the vm
 
     curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P chefdk -c stable -v 0.18.30
 
-# motd
+## motd
 
 Set up your working directory    
 

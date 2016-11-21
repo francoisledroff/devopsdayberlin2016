@@ -1,5 +1,28 @@
+#  Chef Templates and Ohai
 
-#  Vagrant
+In the [previous chapter](../1-chef-client) we introduced the following Chef elements:
+* Chef `nodes`
+* `chef-client`
+* Chef `resource`
+* Chef `recipes`
+
+here we add:
+
+* `chef-repo`
+* Chef `cookbooks`
+* Chef `template`
+* `Ohai`
+
+And to test-drive it, we use
+* VirtualBox
+* Vagrant
+
+#  Chef Templates Test drive
+
+## Install VirtualBox
+
+
+##  Vagrant
 
 Running a simple basic `CentOS-6.4-x86_64` image
 
@@ -8,11 +31,11 @@ Running a simple basic `CentOS-6.4-x86_64` image
     vagrant up
     vagrant ssh
 
-# Install Chef-dk on the vm
+## Install Chef-dk on the vm
 
     curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P chefdk -c stable -v 0.18.30
 
-# Create cookbook
+## Create cookbook
 
 Set up your working directory    
 
@@ -22,7 +45,7 @@ Set up your working directory
         cp -rf /vagrant/chef-repo/cookbooks ~/chef-repo/cookbooks
         
                 
-# Apply cookbook
+## Apply cookbook
 
 check the recipe and the associated template:
 
@@ -34,7 +57,7 @@ test it:
         sudo chef-client --local-mode --runlist 'recipe[motd]'
         
         
-# Misc Notes
+## Misc Notes
 
 Note I generated the cookbooks skelelton using the command :
                 

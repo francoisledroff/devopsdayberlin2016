@@ -1,7 +1,8 @@
 require 'cheffish'
 require 'chef/provisioning/vagrant_driver'
 
-repo_path = "/Users/ledroff/workspace/github/devopsdayberlin2016/4-nginx-reverse-proxy-fat-jar/chef-repo"
+#repo_path = "/Users/ledroff/workspace/github/devopsdayberlin2016/4-nginx-reverse-proxy-fat-jar/chef-repo"
+repo_path = ENV['CHEF_REPO_4']
 vms_dir = File.join(repo_path, 'vagrant_vms')
 
 with_chef_local_server :chef_repo_path => repo_path,

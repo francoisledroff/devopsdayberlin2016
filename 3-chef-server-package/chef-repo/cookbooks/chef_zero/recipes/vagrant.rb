@@ -1,7 +1,8 @@
 require 'cheffish'
 require 'chef/provisioning/vagrant_driver'
 
-repo_path = "/Users/ledroff/workspace/github/devopsdayBerlin2016/3-chef-server-package/chef-repo"
+#repo_path = "/Users/ledroff/workspace/github/devopsdayBerlin2016/3-chef-server-package/chef-repo"
+repo_path = ENV['CHEF_REPO_3']
 vms_dir = File.join(repo_path, 'vagrant_vms')
 
 with_chef_local_server :chef_repo_path => repo_path,
